@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Natur Gym</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>NATUR</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="trainers.html" class="nav-link">Instrutores</a>
+                <a href="membership.html" class="nav-link">Planos</a>
+                <a href="calculator.html" class="nav-link">Calculadora</a>
+                <a href="index.html#app-download" class="nav-link">Aplicativo</a>
+                <a href="contact.html" class="nav-link active">Contato</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Entre em Contato</h1>
+            <p>Estamos aqui para ajudar você a alcançar seus objetivos</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Fale Conosco</h2>
+                    <p>Tem dúvidas sobre nossos serviços? Quer agendar uma visita? Entre em contato conosco!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Endereço</h4>
+                                <p>Avenida Ministro A Petrônio Portela, 86<br>CEP: 64000-000</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Telefone</h4>
+                                <p>(86) 98112-64546<br>(86) 3333-3333</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h4>E-mail</h4>
+                                <p>contato@naturgym.com<br>vendas@naturgym.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">🕐</div>
+                            <div class="contact-details">
+                                <h4>Horários de Atendimento</h4>
+                                <p>Segunda a Sexta: 6h às 22h<br>Sábados: 7h às 19h<br>Domingos: 8h às 17h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h4>Siga-nos nas Redes Sociais</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">📘 Facebook</a>
+                            <a href="#" class="social-link">📷 Instagram</a>
+                            <a href="#" class="social-link">🐦 Twitter</a>
+                            <a href="#" class="social-link">📺 YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Envie sua Mensagem</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Nome *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Sobrenome *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="informacoes">Informações sobre planos</option>
+                                <option value="agendamento">Agendar visita</option>
+                                <option value="aula-experimental">Aula experimental</option>
+                                <option value="personal">Personal trainer</option>
+                                <option value="nutricao">Acompanhamento nutricional</option>
+                                <option value="cancelamento">Cancelamento</option>
+                                <option value="reclamacao">Reclamação</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Quero receber novidades e ofertas por e-mail
+                            </label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <span class="checkmark"></span>
+                                Concordo com os termos de uso e política de privacidade *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Nossa Localização</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <h3>🗺️ NATUR Gym</h3>
+                        <p>Rua do Fitness, 123 - Centro</p>
+                        <p>São Paulo, SP</p>
+                        <div class="map-features">
+                            <div class="map-feature">🚗 Estacionamento disponível</div>
+                            <div class="map-feature">🚇 Próximo ao metrô</div>
+                            <div class="map-feature">🚌 Várias linhas de ônibus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Como posso agendar uma visita?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você pode agendar uma visita pelo telefone (11) 9999-9999, pelo formulário de contato ou vindo diretamente à academia durante nossos horários de funcionamento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Vocês oferecem aula experimental?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Oferecemos uma aula experimental gratuita para que você conheça nossa estrutura e metodologia antes de se matricular.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Qual é o prazo de resposta para mensagens?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Respondemos todas as mensagens em até 24 horas durante dias úteis. Para urgências, recomendamos o contato telefônico.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h4>Posso cancelar minha matrícula online?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Para cancelamentos, é necessário comparecer pessoalmente à academia ou enviar uma solicitação formal por e-mail com antecedência de 30 dias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NATUR</h3>
+                    <p>Transformando vidas através do fitness desde 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="trainers.html">Instrutores</a></li>
+                        <li><a href="membership.html">Planos</a></li>
+                        <li><a href="calculator.html">Calculadora</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📍 Avenida Ministro A Petrônio Portela, 86</p>
+                    <p>📞 (86) 98112-64546</p>
+                    <p>✉️ contato@naturgym.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horários</h4>
+                    <p>Segunda a Sexta: 5h às 10h e 14h às 22h</p>
+                    <p>Sábados: 8h às 10h e 16h às 18h</p>
+                    <p>Domingos: Fechado</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NATUR Gym. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script>
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            const answer = faqItem.querySelector('.faq-answer');
+            const toggle = element.querySelector('.faq-toggle');
+            
+            faqItem.classList.toggle('active');
+            
+            if (faqItem.classList.contains('active')) {
+                answer.style.display = 'block';
+                toggle.textContent = '-';
+            } else {
+                answer.style.display = 'none';
+                toggle.textContent = '+';
+            }
+        }
+
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Form validation
+            const firstName = document.getElementById('firstName').value.trim();
+            const lastName = document.getElementById('lastName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value.trim();
+            const terms = document.getElementById('terms').checked;
+            
+            if (!firstName || !lastName || !email || !subject || !message || !terms) {
+                alert('Por favor, preencha todos os campos obrigatórios e aceite os termos de uso.');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, insira um e-mail válido.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Mensagem enviada com sucesso! Retornaremos o contato em breve.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
