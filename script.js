@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // CTA button functionality
-    const ctaButton = document.querySelector('.cta-button');
+    const ctaButton = document.querySelector('.cta-button-main');
     if (ctaButton) {
         ctaButton.addEventListener('click', function() {
             const plansSection = document.getElementById('plans');
@@ -196,7 +196,18 @@ document.addEventListener('DOMContentLoaded', function() {
         heroObserver.observe(heroSection);
     }
 
-   
+
+    // WhatsApp assessment button
+    const whatsappAssessment = document.getElementById('whatsappAssessment');
+    if (whatsappAssessment) {
+        whatsappAssessment.addEventListener('click', function(e) {
+            e.preventDefault();
+            const phoneNumber = '5586981264546';
+            const message = 'Gostaria de marcar uma avaliação física';
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        });
+    }
 
     // Social media links
     const socialLinks = document.querySelectorAll('.social-links a');
