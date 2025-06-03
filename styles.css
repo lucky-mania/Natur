@@ -296,7 +296,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     transition: all 0.3s ease;
-    width: 103%;
 }
 
 .feature-premium:hover {
@@ -1357,8 +1356,14 @@ body {
 
     .features-premium {
         grid-template-columns: 1fr;
+        
     }
-
+    .feature-premium{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     .natur-main-logo {
         max-width: 120px;
     }
