@@ -290,12 +290,13 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
-    padding: 5rem;
+    padding: 1.5rem;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     transition: all 0.3s ease;
+    width: 103%;
 }
 
 .feature-premium:hover {
